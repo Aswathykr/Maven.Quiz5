@@ -20,7 +20,7 @@ public class    ComparableTreeSet<Element> extends TreeSet<Element> implements C
 
     public int compareTo(ComparableTreeSet<Element> o) {
 
-        return this.size() - o.size();
+        return this.toString().compareTo(o.toString());
     }
 
     @Override
@@ -28,6 +28,6 @@ public class    ComparableTreeSet<Element> extends TreeSet<Element> implements C
         if(! (o instanceof ComparableTreeSet))
             return -1;
         ComparableTreeSet<Element> secondSet = (ComparableTreeSet)o;
-        return this.size() - secondSet.size();
+        return this.compareTo(secondSet);
     }
 }
