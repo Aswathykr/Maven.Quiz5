@@ -1,14 +1,16 @@
 package rocks.zipcode.io.quiz4.generics;
 
-import java.util.Arrays;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * @author leon on 11/12/2018.
  */
 public class GenericUtils {
     public static <_ extends Comparable> Iterable<? extends Iterable<_>> powerSet(Set<_> originalSet) {
+        TreeSet<_> set = new TreeSet<>(originalSet);
+        TreeSet<TreeSet<_>> resultSet = new TreeSet<>();
+        Iterator<_> it = set.iterator();
+
         return null;
     }
 
