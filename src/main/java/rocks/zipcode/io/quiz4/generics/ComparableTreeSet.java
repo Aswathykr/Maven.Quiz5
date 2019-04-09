@@ -14,12 +14,10 @@ public class    ComparableTreeSet<Element> extends TreeSet<Element> implements C
         }
     }
 
-
     public ComparableTreeSet() {
     }
 
     public int compareTo(ComparableTreeSet<Element> o) {
-
         return this.toString().compareTo(o.toString());
     }
 
